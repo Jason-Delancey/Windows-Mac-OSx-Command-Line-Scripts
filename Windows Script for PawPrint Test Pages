@@ -19,7 +19,7 @@
 
 ::Map the Columbia University PawPrint network printer to local printer port lpt1
 ::Limit the mapping to this session
-net use lpt1 \\%USERNAME%\PawPrint /persistent:no
+net use lpt1 \\%COMPUTERNAME%\PawPrint /persistent:no
 
 ::Now specify the print device you want to use and the file you
 ::want to print. Repeat this to send 60 test pages to your PawPrint queue.
