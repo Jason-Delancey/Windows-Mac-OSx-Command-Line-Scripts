@@ -1,0 +1,78 @@
+#!/bin/bash
+#this is a commend-the first line sets bash as the shell script
+
+#Windows batch file used to print multiple test pages using a local 
+#PawPrint printer.
+
+#Make sure the current user's name is identical to the UNI associated 
+#with the PawPrint queue.
+
+#Make sure the test file is a txt file saved and named test.txt before 
+#executing this script.
+
+#Save this text file as a cmd file and send it to the desktop for easy access.
+#Specify the printer and the path of the test file 
+#Repeat this 60 times to send 60 test pages to the user's PawPrint queue
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+lp -d PawPrint ~/desktop/test.txt
+
+#Pause the end of the script to verify that the jobs were sent successfully
+read -p "Press any key to continue"

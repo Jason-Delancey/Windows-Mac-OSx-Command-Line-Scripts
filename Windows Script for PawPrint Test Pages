@@ -1,0 +1,89 @@
+::Windows batch file used to print multiple test pages using a local printer
+::by first mapping a network printer to a local port.
+
+::Make sure the selected printer is shared on the network before executing
+::this script.
+
+::Make sure the test file is a txt file saved to the same default PWD as this 
+::executable and named test.txt before executing this script.
+
+::Save this text file as a cmd file and send it to the desktop for easy access.
+::Make sure the script file and the test file are in the same directory.
+
+::Make sure the name of the current Windows user's name is identical to the UNI 
+::associated with the PawPrint queue.
+
+::@author CloudStrife
+
+::Map the Columbia University PawPrint network printer to local printer port lpt1
+::Limit the mapping to this session
+net use lpt1 \\%COMPUTERNAME%\PawPrint /persistent:no
+
+::Now specify the print device you want to use and the file you
+::want to print. Repeat this to send 60 test pages to your PawPrint queue.
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+print /d:lpt1 test.txt
+
+::Pause after the last execution to verify that the jobs were sent successfully.
+::Otherwise the window will immediately close after execution.
+pause
+
+::The test pages may appear as Local Downtime Documents in the print queue but are still printable
