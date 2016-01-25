@@ -10,6 +10,8 @@
 ::Save this text file as a cmd file and send it to the desktop for easy access.
 ::Make sure the script file and the test file are in the same directory.
 
+::Make sure the PawPrint UNI-client is downloaded on the user's account.
+
 ::Make sure the name of the current Windows user's name is identical to the UNI 
 ::associated with the PawPrint queue.
 

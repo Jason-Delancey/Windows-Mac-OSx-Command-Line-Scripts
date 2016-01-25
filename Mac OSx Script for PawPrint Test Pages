@@ -10,6 +10,8 @@
 #Make sure the test file is a txt file saved and named test.txt before 
 #executing this script.
 
+#Make sure the PawPrint UNI-client is downloaded on the user's account.
+
 #Save this text file as a cmd file and send it to the desktop for easy access.
 #Specify the printer and the path of the test file 
 #Repeat this 60 times to send 60 test pages to the user's PawPrint queue
