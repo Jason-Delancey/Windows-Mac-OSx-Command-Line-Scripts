@@ -11,6 +11,9 @@
 #executing this script.
 
 #Make sure the PawPrint UNI-client is downloaded on the user's account.
+#Make a test txt file in the desktop using the name of the current user
+cd desktop
+echo %USERNAME% "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" %USERNAME% > test.txt
 
 #Save this text file as a cmd file and send it to the desktop for easy access.
 #Specify the printer and the path of the test file 
