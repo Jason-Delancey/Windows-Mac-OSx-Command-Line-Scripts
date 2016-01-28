@@ -19,14 +19,122 @@
 
 ::Map the Columbia University PawPrint network printer to local printer port lpt1
 ::Limit the mapping to this session
+echo off
+echo Mapping PawPrint to lpt1 port....
 net use lpt1 \\%COMPUTERNAME%\PawPrint /persistent:no
 
 ::Print out the name of the current user on the test.txt file, followed by a few blank lines
 ::to cover at least 2 pages
-echo %USERNAME% "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" %USERNAME% > test.txt
+echo Populating text file with name of the current user....
+echo %USERNAME% > test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+
 
 ::Now specify the print device you want to use and the file you
-::want to print. Repeat this to send 60 test pages to your PawPrint queue.
+::want to print. Repeat this to send 50+ double-sided test pages to your PawPrint queue.
+echo Sending test pages to the queue....
 print /d:lpt1 test.txt
 print /d:lpt1 test.txt
 print /d:lpt1 test.txt

@@ -12,12 +12,118 @@
 
 #Make sure the PawPrint UNI-client is downloaded on the user's account.
 #Make a test txt file in the desktop using the name of the current user
+echo off
 cd desktop
-echo %USERNAME% "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n" %USERNAME% > test.txt
+echo Populating text file with name of the current user....
+echo %USERNAME% > test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
+echo %USERNAME% >> test.txt
+echo.>> test.txt
 
 #Save this text file as a cmd file and send it to the desktop for easy access.
 #Specify the printer and the path of the test file 
-#Repeat this 60 times to send 60 test pages to the user's PawPrint queue
+#Repeat this to send 50+ test pages to the user's PawPrint queue
+echo Sending test pages to the PawPrint queue
 lp -d PawPrint ~/desktop/test.txt
 lp -d PawPrint ~/desktop/test.txt
 lp -d PawPrint ~/desktop/test.txt
