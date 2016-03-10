@@ -26,7 +26,7 @@ net use lpt1 \\%COMPUTERNAME%\PawPrint /persistent:no
 ::Print out the name of the current user on the test.txt file, followed by a few blank lines
 ::to cover at least 2 pages
 echo Populating text file with name of the current user....
-echo 
+echo ..
 echo %USERNAME% > test.txt
 echo.>> test.txt
 echo %USERNAME% >> test.txt
@@ -136,7 +136,7 @@ echo.>> test.txt
 ::Now specify the print device you want to use and the file you
 ::want to print. Repeat this to send 50+ double-sided test pages to your PawPrint queue.
 echo Sending test pages to the queue....
-echo 
+echo ..
 print /d:lpt1 test.txt
 print /d:lpt1 test.txt
 print /d:lpt1 test.txt
