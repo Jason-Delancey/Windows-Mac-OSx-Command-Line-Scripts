@@ -33,8 +33,10 @@ echo Populating text file with name of the current user
 echo ...
 
 ::Starts at 1, steps by one, and finishes at 50.
+echo %USERNAME% > test.txt
+echo.>> test.txt
 for /l %%x in (1, 1, 50) do (
-	echo %USERNAME% > test.txt
+	echo %USERNAME% >> test.txt
 	echo.>> test.txt
 )
 
