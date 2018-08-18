@@ -1,5 +1,18 @@
+::Windows batch file used to print multiple test pages using a local printer by first mapping a network printer to a local port.
+
+::Make sure the selected printer is shared on the network and the name of the shared printer is changed to 'PawPrint' before executing
+::this script.
+
+::Make sure the script file and the test file are in the same directory.
+
+::Make sure the PawPrint UNI-client is downloaded on the user's account.
+
+::Make sure the name of the current Windows user's name is identical to the UNI 
+::associated with the PawPrint queue.
+
+::@author Jason Delancey
+
 ::Map the Columbia University PawPrint network printer to local printer port lpt1
-::Limit the mapping to this session
 net use lpt1 /delete
 net use lpt1 \\%COMPUTERNAME%\PawPrint /persistent:no
 
