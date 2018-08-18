@@ -1,9 +1,0 @@
-
-
-::Now specify the print device you want to use and the file you
-::want to print. Repeat this to send double-sided test pages to your PawPrint queue according to the user's input quantity.
-::Starts at 1, steps by one, and finishes at amount specified by user input.
-"C:\Windows\System32\cmd.exe" /k FOR /L %i IN (1, 1, 3) DO print /d:lpt1 C:\Users\%USERNAME%\Desktop\test.txt
-
-::Create a desktop shortcut with the following:
-"C:\Windows\System32\cmd.exe" /c C:\Users\%USERNAME%\Desktop\preprint.bat && "C:\Windows\System32\cmd.exe" /c FOR /L %i IN (1, 1, 3) DO print /d:lpt1 C:\Users\%USERNAME%\Desktop\test.txt
