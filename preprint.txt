@@ -3,12 +3,16 @@
 ::Make sure the selected printer is shared on the network and the name of the shared printer is changed to 'PawPrint' before executing
 ::this script.
 
-::Make sure the script file and the test file are in the same directory.
+::Make sure this batch file is in the current user desktop.
 
 ::Make sure the PawPrint UNI-client is downloaded on the user's account.
 
-::Make sure the name of the current Windows user's name is identical to the UNI 
-::associated with the PawPrint queue.
+::Make sure to rename this file "preprint.bat" to run it.
+
+::Make sure the name of the current Windows user's name is identical to the UNI associated with the PawPrint queue.
+
+::Create a desktop shortcut with the following line:
+"C:\Windows\System32\cmd.exe" /c C:\Users\%USERNAME%\Desktop\preprint.bat && "C:\Windows\System32\cmd.exe" /c FOR /L %i IN (1, 1, 50) DO print /d:lpt1 C:\Users\%USERNAME%\Desktop\test.txt
 
 ::@author Jason Delancey
 
