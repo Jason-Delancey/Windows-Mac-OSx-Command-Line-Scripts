@@ -1,7 +1,7 @@
 ::Windows batch file used to print multiple test pages using a local printer
 ::by first mapping a network printer to a local port.
 
-::Make sure the selected printer is shared on the network before executing
+::Make sure the selected printer is shared on the network and the name of the shared printer is changed to 'PawPrint' before executing
 ::this script.
 
 ::Make sure the test file is a txt file saved to the same default PWD as this 
