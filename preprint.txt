@@ -1,0 +1,17 @@
+::Map the Columbia University PawPrint network printer to local printer port lpt1
+::Limit the mapping to this session
+net use lpt1 /delete
+net use lpt1 \\%COMPUTERNAME%\PawPrint /persistent:no
+
+::Create the test text file on the desktop
+::Print out the name of the current user on the test.txt file 50 times, followed by a few blank lines
+::to cover at least 2 pages for double-sided testing
+::Starts at 1, steps by one, and finishes at 50.
+copy NUL /Y C:\Users\%USERNAME%\Desktop\test.txt
+echo %USERNAME% > C:\Users\%USERNAME%\Desktop\test.txt
+echo.>> C:\Users\%USERNAME%\Desktop\test.txt
+
+FOR /L %%i IN (1, 1, 50) DO (
+	echo %USERNAME% >> C:\Users\%USERNAME%\Desktop\test.txt
+	echo.>> C:\Users\%USERNAME%\Desktop\test.txt
+)
