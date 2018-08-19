@@ -12,7 +12,7 @@
 ::Make sure the name of the current Windows user's name is identical to the UNI associated with the PawPrint queue.
 
 ::Create a desktop shortcut with the following line:
-"C:\Windows\System32\cmd.exe" /c C:\Users\%USERNAME%\Desktop\preprint.bat && "C:\Windows\System32\cmd.exe" /c FOR /L %i IN (1, 1, 50) DO print /d:lpt1 C:\Users\%USERNAME%\Desktop\test.txt
+::"C:\Windows\System32\cmd.exe" /c C:\Users\%USERNAME%\Desktop\preprint.bat && "C:\Windows\System32\cmd.exe" /c FOR /L %i IN (1, 1, 50) DO print /d:lpt1 C:\Users\%USERNAME%\Desktop\test.txt
 
 ::@author Jason Delancey
 
